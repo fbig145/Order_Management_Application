@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.adminPageController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #49837c;">
+         <children>
+            <Text fill="WHITE" layoutX="140.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Front Page">
+               <font>
+                  <Font name="Chalkboard" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="clientOperationsButton" layoutX="175.0" layoutY="128.0" mnemonicParsing="false" onAction="#clientOperationsButtonOnAction" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #49837c;" text="Client Operations" textFill="WHITE" />
+      <Button fx:id="productOperationsButton" layoutX="175.0" layoutY="193.0" mnemonicParsing="false" onAction="#productOperationsButtonOnAction" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #49837c;" text="Product Operations" textFill="WHITE" />
+      <Button fx:id="orderButton" layoutX="175.0" layoutY="258.0" mnemonicParsing="false" onAction="#orderButtonOnAction" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #49837c;" text="Product Orders" textFill="WHITE" />
+      <Button fx:id="cancelButton" layoutX="175.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #49837c;" text="Cancel" textFill="WHITE" />
+   </children>
+</AnchorPane>

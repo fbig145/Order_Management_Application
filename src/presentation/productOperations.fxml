@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.productOperationsController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #49837c;">
+         <children>
+            <Text fill="WHITE" layoutX="144.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Operations">
+               <font>
+                  <Font name="Chalkboard" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="14.0" layoutY="108.0" prefHeight="284.0" prefWidth="260.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_product_name" prefWidth="91.0" text="Product Name" />
+            <TableColumn fx:id="col_quantity" prefWidth="91.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="310.0" layoutY="122.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" text="Delete Product" />
+      <TextField fx:id="deleteTextField" layoutX="420.0" layoutY="122.0" promptText="Product ID" />
+      <Button fx:id="editButton" layoutX="310.0" layoutY="178.0" mnemonicParsing="false" onAction="#editButtonOnAction" prefHeight="26.0" prefWidth="98.0" text="Edit Product" />
+      <TextField fx:id="editIDTextField" layoutX="420.0" layoutY="178.0" promptText="Product ID" />
+      <TextField fx:id="editNameTextField" layoutX="420.0" layoutY="213.0" promptText="Product Name" />
+      <TextField fx:id="editQuantityTextField" layoutX="420.0" layoutY="248.0" promptText="Quantity" />
+      <Button fx:id="addProduct" layoutX="310.0" layoutY="307.0" mnemonicParsing="false" onAction="#addProductOnAction" prefHeight="26.0" prefWidth="98.0" text="Add Product" />
+      <TextField fx:id="addProductTextField" layoutX="420.0" layoutY="307.0" promptText="Product Name" />
+      <TextField fx:id="addQuantityTextField" layoutX="420.0" layoutY="342.0" promptText="Quantity" />
+      <Button fx:id="cancelButton" layoutX="310.0" layoutY="368.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
+      <Label fx:id="deleteLabel" alignment="CENTER" layoutX="313.0" layoutY="155.0" prefHeight="17.0" prefWidth="267.0" textFill="RED" />
+      <Label fx:id="addLabel" alignment="CENTER" layoutX="420.0" layoutY="373.0" prefHeight="17.0" prefWidth="160.0" textFill="RED" />
+      <Label fx:id="editLabel" alignment="CENTER" layoutX="420.0" layoutY="280.0" prefHeight="17.0" prefWidth="160.0" textFill="RED" />
+   </children>
+</AnchorPane>

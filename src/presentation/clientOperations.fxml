@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.clientOperationsController">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #49837c;">
+         <children>
+            <Text fill="WHITE" layoutX="144.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Operations">
+               <font>
+                  <Font name="Chalkboard" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="14.0" layoutY="110.0" prefHeight="280.0" prefWidth="227.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_first_name" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="col_last_name" prefWidth="75.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="300.0" layoutY="112.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" text="Delete Client" />
+      <TextField fx:id="deleteTextField" layoutX="410.0" layoutY="112.0" promptText="Client ID" />
+      <Button fx:id="editButton" layoutX="300.0" layoutY="168.0" mnemonicParsing="false" onAction="#editButtonOnAction" prefHeight="26.0" prefWidth="87.0" text="Edit Client" />
+      <TextField fx:id="editIDTextField" layoutX="410.0" layoutY="168.0" promptText="Client ID" />
+      <TextField fx:id="editFirstTextField" layoutX="410.0" layoutY="203.0" promptText="Client First Name" />
+      <TextField fx:id="editLastTextField" layoutX="410.0" layoutY="238.0" promptText="Client Last Name" />
+      <Button fx:id="addClient" layoutX="300.0" layoutY="297.0" mnemonicParsing="false" onAction="#addClientOnAction" prefHeight="26.0" prefWidth="87.0" text="Add Client" />
+      <TextField fx:id="addFirstTextField" layoutX="410.0" layoutY="297.0" promptText="Client First Name" />
+      <TextField fx:id="addLastTextField" layoutX="410.0" layoutY="332.0" promptText="Client Last Name" />
+      <Button fx:id="cancelButton" layoutX="300.0" layoutY="358.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="87.0" text="Cancel" />
+      <Label fx:id="deleteLabel" alignment="CENTER" layoutX="303.0" layoutY="145.0" prefHeight="17.0" prefWidth="267.0" textFill="RED" />
+      <Label fx:id="addLabel" alignment="CENTER" layoutX="410.0" layoutY="363.0" prefHeight="17.0" prefWidth="160.0" textFill="RED" />
+      <Label fx:id="editLabel" alignment="CENTER" layoutX="410.0" layoutY="270.0" prefHeight="17.0" prefWidth="160.0" textFill="RED" />
+   </children>
+</AnchorPane>
